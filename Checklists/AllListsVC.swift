@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AllListsVC: UITableViewController, ListDetailViewControllerDelegate {
+class AllListsVC: UITableViewController, ListDetailViewControllerDelegate, UINavigationControllerDelegate {
 
     //var lists: [Checklist]
     
@@ -24,6 +24,18 @@ class AllListsVC: UITableViewController, ListDetailViewControllerDelegate {
         super.viewDidLoad()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        navigationController?.delegate = self
+        
+        let index = dataModel.indexOfSelectedChecklist
+        if index >= 0 && index < dataModel.lists.count {
+            let checklist = dataModel.lists[index]
+            performSegue(withIdentifier: "ShowChecklist", sender: checklist)
+        }
+    }
+    
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -49,6 +61,8 @@ class AllListsVC: UITableViewController, ListDetailViewControllerDelegate {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        dataModel.indexOfSelectedChecklist = indexPath.row
+        
         let checklist = dataModel.lists[indexPath.row]
         performSegue(withIdentifier: "ShowChecklist", sender: checklist)
     }
@@ -120,6 +134,13 @@ class AllListsVC: UITableViewController, ListDetailViewControllerDelegate {
             default:
                 print("unnamed segue")
             }
+        }
+    }
+    
+    //MARK: UINavigationControllerDelegate conformance
+    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+        if viewController === self {
+            dataModel.indexOfSelectedChecklist = -1
         }
     }
 }
