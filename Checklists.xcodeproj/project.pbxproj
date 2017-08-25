@@ -18,6 +18,7 @@
 		44D771161F48D45900149E6A /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D771151F48D45900149E6A /* Checklist.swift */; };
 		44E91DCB1F477C6500579A4C /* AllListsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E91DCA1F477C6500579A4C /* AllListsVC.swift */; };
 		44FA06C01F4DBA6C00D91682 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA06BF1F4DBA6C00D91682 /* DataModel.swift */; };
+		44FA06C21F4E602B00D91682 /* IconPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA06C11F4E602B00D91682 /* IconPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		44D771151F48D45900149E6A /* Checklist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
 		44E91DCA1F477C6500579A4C /* AllListsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllListsVC.swift; sourceTree = "<group>"; };
 		44FA06BF1F4DBA6C00D91682 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		44FA06C11F4E602B00D91682 /* IconPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		44E91DCC1F477C6F00579A4C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				44FA06C11F4E602B00D91682 /* IconPickerViewController.swift */,
 				4433E1221F2FC41B0079BC41 /* ChecklistVC.swift */,
 				4424B6721F386E5600ED6D42 /* ItemDetailVC.swift */,
 				44E91DCA1F477C6500579A4C /* AllListsVC.swift */,
@@ -190,6 +193,7 @@
 				4433E1231F2FC41B0079BC41 /* ChecklistVC.swift in Sources */,
 				442193131F49B10A009FA954 /* ListDetailViewController.swift in Sources */,
 				4433E1341F305D190079BC41 /* ChecklistItem.swift in Sources */,
+				44FA06C21F4E602B00D91682 /* IconPickerViewController.swift in Sources */,
 				44D771161F48D45900149E6A /* Checklist.swift in Sources */,
 				4433E1211F2FC41B0079BC41 /* AppDelegate.swift in Sources */,
 				44FA06C01F4DBA6C00D91682 /* DataModel.swift in Sources */,
