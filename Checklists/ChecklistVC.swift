@@ -53,13 +53,13 @@ class ChecklistVC : UITableViewController, ItemDetailVCDelegate {
                             with item: ChecklistItem) {
         let label = cell.viewWithTag(1001) as! UILabel
         label.text = item.checked ? "✓" : ""
-        print(view.tintColor)
         label.textColor = view.tintColor
     }
     
     func configureText(for cell: UITableViewCell,
                        with item: ChecklistItem) {
         let label = cell.viewWithTag(1000) as! UILabel
+        //label.text = item.text
         label.text = item.text
     }
     

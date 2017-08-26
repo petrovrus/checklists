@@ -84,11 +84,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Checklists/ChecklistVC.swift"
-            timestampString = "525376680.405307"
+            timestampString = "525398741.088653"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "configureCheckmark(for:with:)"
             landmarkType = "7">
          </BreakpointContent>
